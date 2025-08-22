@@ -1,23 +1,58 @@
-name: Mirror to CNB Repo
+name: Sync with Upstream and Mirror to CNB Repo
 
 on:
+  schedule:
+    - cron: '0 * * * *'  # 每小时运行一次同步任务
   push:
     branches:
       - main
       - master
 
 jobs:
-  sync:
+  sync-upstream:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      # 检出当前仓库
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # 添加上游仓库
+      - name: Add upstream remote
+        run: git remote add upstream https://github.com/上游仓库用户名/上游仓库.git
+
+      # 拉取上游仓库的更新
+      - name: Fetch upstream changes
+        run: |
+          git fetch upstream
+          git checkout main  # 切换到目标分支
+          git merge upstream/main  # 合并上游的更新
+
+      # 推送到 fork 仓库
+      - name: Push changes to fork
+        run: git push origin main  # 将更新推送到你的 fork 仓库
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 提供的 token 推送更新
+
+  mirror-to-cnb:
+    runs-on: ubuntu-latest
+    needs: sync-upstream  # 只有在 upstream 同步成功后才会执行
+
+    steps:
+      # 检出仓库
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Mirror to CNB
+      # 配置 Git 用户
+      - name: Set git config
         run: |
           git config --global user.name "github-bot"
           git config --global user.email "actions@github.com"
+
+      # 将代码推送到 CNB 仓库
+      - name: Mirror to CNB
+        run: |
           git remote add cnb https://cnb:eLw1FVT7XetoRNf1feccNOKoHaJ@cnb.cool/ETS2LA-CN/Euro-Truck-Simulator-2-Lane-Assist.git
           git push --mirror cnb
