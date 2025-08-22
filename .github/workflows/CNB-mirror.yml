@@ -26,7 +26,7 @@ jobs:
         run: |
           git fetch upstream
           git checkout main  # 切换到目标分支
-          git merge upstream/main  # 合并上游的更新
+          git merge upstream/main --allow-unrelated-histories  # 强制合并
 
       # 推送到 fork 仓库
       - name: Push changes to fork
