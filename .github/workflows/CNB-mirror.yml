@@ -17,16 +17,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      # 设置 Git 配置信息
+      - name: Set git config
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+
       # 添加上游仓库
       - name: Add upstream remote
-        run: git remote add upstream https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist
+        run: git remote add upstream https://github.com/上游仓库用户名/上游仓库.git
 
       # 拉取上游仓库的更新
       - name: Fetch upstream changes
         run: |
           git fetch upstream
           git checkout main  # 切换到目标分支
-          git merge upstream/main --allow-unrelated-histories  # 强制合并
+          git merge upstream/main --allow-unrelated-histories  # 合并上游的更新
 
       # 推送到 fork 仓库
       - name: Push changes to fork
@@ -45,10 +51,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      # 配置 Git 用户
+      # 设置 Git 配置信息
       - name: Set git config
         run: |
-          git config --global user.name "github-bot"
+          git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
       # 将代码推送到 CNB 仓库
