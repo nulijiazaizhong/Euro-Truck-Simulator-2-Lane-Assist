@@ -19,7 +19,7 @@ jobs:
 
       # 添加上游仓库
       - name: Add upstream remote
-        run: git remote add upstream https://github.com/上游仓库用户名/上游仓库.git
+        run: git remote add upstream https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist
 
       # 拉取上游仓库的更新
       - name: Fetch upstream changes
