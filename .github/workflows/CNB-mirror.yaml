@@ -1,0 +1,72 @@
+name: Sync with Upstream and Mirror to CNB Repo
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # 每小时运行一次同步任务
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  sync-upstream:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 检出当前仓库
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 设置 Git 配置信息
+      - name: Set git config
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+
+      # 添加上游仓库
+      - name: Add upstream remote
+        run: git remote add upstream https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist.git
+
+      # 合并上游更新
+      - name: Merge upstream changes
+        run: |
+          git fetch upstream
+          git checkout main
+          git merge upstream/main --no-edit || true
+
+      # 恢复被误删的工作流文件（保护 .github/workflows）
+      - name: Restore workflows
+        run: |
+          git checkout origin/main -- .github/workflows || true
+          git add .github/workflows
+          git commit -m "Restore workflows" || echo "No changes to commit"
+
+      # 推送到 fork 仓库
+      - name: Push changes to fork
+        run: git push origin main --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  mirror-to-cnb:
+    runs-on: ubuntu-latest
+    needs: sync-upstream  # 上游同步成功后再执行
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set git config
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+
+      # 推送到 CNB 仓库（仅 main 分支 + tags，不会删除其它内容）
+      - name: Mirror to CNB
+        run: |
+          git remote add cnb https://cnb:eLw1FVT7XetoRNf1feccNOKoHaJ@cnb.cool/ETS2LA-CN/Euro-Truck-Simulator-2-Lane-Assist.git
+          git push cnb main:main --force
+          git push cnb --tags --force
