@@ -65,7 +65,7 @@ class Page(ETS2LAPage):
 
     loading = False
     catalogue = {}
-    catalogues = ["https://github.com/ETS2LA/plugins"]
+    catalogues = ["https://github.com/ETS2LA/plugins","https://github-proxy.ets2la.cn/raw.githubusercontent.com/ETS2LA/plugins"]
 
     plugins: list[CataloguePlugin] = []
     selected_plugin: CataloguePlugin = None
@@ -135,6 +135,9 @@ class Page(ETS2LAPage):
 
     def update_data(self):
         self.catalogue = self.get_catalogue_data(self.catalogues[0])
+        # If the primary path fails to load, try using the alternate path
+        if not self.catalogue and len(self.catalogues) > 1:
+            self.catalogue = self.get_catalogue_data(self.catalogues[1])
         self.crawl_catalogue()
         self.loading = False
 
