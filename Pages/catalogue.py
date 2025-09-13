@@ -197,7 +197,11 @@ class Page(ETS2LAPage):
 
         try:
             # updating logic
-            if target.installed_version != target.version:
+            if (
+                target.installed_version != ""
+                and target.version != ""
+                and target.installed_version != target.version
+            ):
                 self.installing_state = _("Closing existing plugin processes")
                 self.reset_timer()
                 if plugins.match_plugin_by_folder(f"CataloguePlugins/{target.name}"):
@@ -456,7 +460,10 @@ class Page(ETS2LAPage):
 
                 with Container(styles.FlexHorizontal() + styles.Gap("5px")):
                     if plugin.installed:
-                        if plugin.version != plugin.installed_version:
+                        if (
+                            plugin.installed_version
+                            and plugin.version != plugin.installed_version
+                        ):
                             with Container(
                                 styles.Classname(
                                     "bg-input/30 rounded-md border px-2 py-1 h-min"
@@ -468,15 +475,27 @@ class Page(ETS2LAPage):
                                     ),
                                     styles.Classname("text-xs"),
                                 )
-                        with Container(
-                            styles.Classname(
-                                "bg-input/30 rounded-md border px-2 py-1 h-min"
-                            )
-                        ):
-                            Text(
-                                _(f"{plugin.installed_version}"),
-                                styles.Classname("text-xs"),
-                            )
+
+                        if plugin.installed_version:
+                            with Container(
+                                styles.Classname(
+                                    "bg-input/30 rounded-md border px-2 py-1 h-min"
+                                )
+                            ):
+                                Text(
+                                    _(f"{plugin.installed_version}"),
+                                    styles.Classname("text-xs"),
+                                )
+                        else:
+                            with Container(
+                                styles.Classname(
+                                    "bg-input/30 rounded-md border px-2 py-1 h-min"
+                                )
+                            ):
+                                Text(
+                                    _("Failed to read version"),
+                                    styles.Classname("text-xs"),
+                                )
 
                     with Container(
                         styles.Classname(
@@ -774,10 +793,16 @@ class Page(ETS2LAPage):
                     continue
                 if os.path.exists(f"CataloguePlugins/{plugin.name}"):
                     plugin.installed = True
-                    data = yaml.safe_load(
-                        open(f"CataloguePlugins/{plugin.name}/plugin.yaml", "r").read()
-                    )
-                    plugin.installed_version = data.get("version", "")
+                    try:
+                        data = yaml.safe_load(
+                            open(
+                                f"CataloguePlugins/{plugin.name}/plugin.yaml", "r"
+                            ).read()
+                        )
+                        plugin.installed_version = data.get("version", "")
+                    except Exception:
+                        plugin.installed_version = ""
+
                     installed_plugins.append(plugin)
                 else:
                     plugin.installed = False
