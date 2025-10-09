@@ -73,8 +73,6 @@ webview.settings = {
     "ALLOW_FILE_URLS": True,
     "OPEN_EXTERNAL_LINKS_IN_BROWSER": True,
     "OPEN_DEVTOOLS_IN_DEBUG": True,
-    "REMOTE_DEBUGGING_PORT": None,
-    "IGNORE_SSL_ERRORS": True,
 }
 
 
@@ -158,11 +156,14 @@ def window_handler(window: webview.Window):
             if not window:
                 return
 
-            if "ets2la" not in window.get_current_url():
-                if not variables.LOCAL_MODE:
-                    time.sleep(0.5)  # 0.5s load time wait
-                    webbrowser.open(window.get_current_url())
-                    window.load_url(variables.FRONTEND_URL)
+            try:
+                if "ets2la" not in window.get_current_url():
+                    if not variables.LOCAL_MODE:
+                        time.sleep(0.5)  # 0.5s load time wait
+                        webbrowser.open(window.get_current_url())
+                        window.load_url(variables.FRONTEND_URL)
+            except Exception:
+                pass
 
 
 def window_callback(window: webview.Window):
