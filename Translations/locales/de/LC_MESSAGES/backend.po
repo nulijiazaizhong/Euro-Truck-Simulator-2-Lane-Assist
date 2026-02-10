@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA Backend 1.0.0\n"
 "POT-Creation-Date: 2026-02-01 15:00\n"
-"PO-Revision-Date: 2026-02-09 21:22+0000\n"
+"PO-Revision-Date: 2026-02-10 18:00+0000\n"
 "Last-Translator: linopix <linopix@ets2la.com>\n"
 "Language-Team: German <http://weblate.ets2la.com/projects/ets2la/backend/de/>"
 "\n"
@@ -556,7 +556,7 @@ msgstr "Erfolg"
 
 #: .\Pages\catalogue.py:257
 msgid "Plugin '{name}' updated successfully."
-msgstr "Plugin {name} wurde erfolgreich aktualisiert."
+msgstr "Plugin '{name}' wurde erfolgreich aktualisiert."
 
 #: .\Pages\catalogue.py:263 .\Pages\catalogue.py:304 .\Pages\catalogue.py:394
 msgid "Failed"
@@ -1312,6 +1312,10 @@ msgid ""
 "\n"
 "A key you can use to refresh websites. Since this page is also a website it works just the same here."
 msgstr ""
+"**F5**\n"
+"\n"
+"Eine Taste die du verwenden kannst um eine Webseite neu zu laden. Da das "
+"hier auch nur eine Webseite ist, funktioniert es hier auch."
 
 #: .\Pages\onboarding.py:748
 msgid "Example of a broken visualization page."
@@ -1730,7 +1734,7 @@ msgstr "Draw Calls: {} ({:.0f}%)"
 
 #: .\Plugins\AR\main.py:738
 msgid "Frustum Culled: {} ({:.0f}%)"
-msgstr ""
+msgstr "Kegelstumpf Aussortierung {} ({:.0f}%)"
 
 #: .\Plugins\AR\main.py:748
 msgid "Text Cache Length: {}"
@@ -1839,7 +1843,7 @@ msgstr ""
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:200
 msgid "Obstruction Settings"
-msgstr ""
+msgstr "Hinderniseinstellungen"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:203
 msgid "Ignore Gates"
@@ -1938,6 +1942,8 @@ msgstr "Debugging-Informationen anzeigen"
 #: .\Plugins\AdaptiveCruiseControl\settings.py:328
 msgid "Show ACC debug information on the AR overlay, can help when tuning the PID controller."
 msgstr ""
+"Zeige ACC Debug Informationen im AR Overlay an, dies kann dir beim "
+"einstellen des PID Controllers helfen."
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:337
 msgid "Unlock PID"
@@ -1977,7 +1983,7 @@ msgstr "Dieses Video erklärt visuell, wie ein PID-controller funktioniert. Bitt
 
 #: .\Plugins\CollisionAvoidance\main.py:19
 msgid "Provide collision avoidance when inside intersections."
-msgstr ""
+msgstr "Stellt Kollisionsvermeidung innerhalb von Kreuzungsbereichen bereit."
 
 #: .\Plugins\CollisionAvoidance\main.py:119
 msgid "Collision avoidance disabled"
@@ -2005,22 +2011,26 @@ msgstr "Empfindlichkeit"
 #: .\Plugins\CollisionAvoidance\ui.py:52
 msgid "How close a vehicle has to be to the truck's path to be considered a threat. Higher values make the system more sensitive."
 msgstr ""
+"Wie nah ein Fahrzeug dem Pfad des LKWs sein muss um als Gefahr angesehen zu "
+"werden. Höhere Werte machen das System empfindlicher."
 
 #: .\Plugins\CollisionAvoidance\ui.py:67
 msgid "Max Speed"
-msgstr "Maximal-Geschwindigkeit"
+msgstr "Höchstgeschwindigkeit"
 
 #: .\Plugins\CollisionAvoidance\ui.py:68
 msgid "The maximum speed the truck can be going for collision avoidance to be active."
 msgstr ""
+"Die Höchstgeschwindigkeit mit der sich der LKW fortbewegen kann, bei der die "
+"Kollisionsvermeidung aktiv bleibt."
 
 #: .\Plugins\CollisionAvoidance\ui.py:81
 msgid "Lookahead Time"
-msgstr ""
+msgstr "Dauer des Vorausschauens"
 
 #: .\Plugins\CollisionAvoidance\ui.py:82
 msgid "How far ahead the system looks for potential collisions."
-msgstr ""
+msgstr "Wie weit voraus das System auf potentielle Kollisionen achtet."
 
 #. TRANSLATORS: This means seconds, basically 3s = 3 seconds
 #: .\Plugins\CollisionAvoidance\ui.py:84
@@ -2029,19 +2039,21 @@ msgstr "s"
 
 #: .\Plugins\CollisionAvoidance\ui.py:93
 msgid "Announce State"
-msgstr ""
+msgstr "Status ankündigen"
 
 #: .\Plugins\CollisionAvoidance\ui.py:94
 msgid "Announce when collision avoidance is activated or deactivated."
-msgstr ""
+msgstr "Kündigt an wenn die Kollisionsvermeidung ein oder ausgeschaltet wird."
 
 #: .\Plugins\EventListener\main.py:20
 msgid "Event Listener"
-msgstr ""
+msgstr "Ereignisüberwachung"
 
 #: .\Plugins\EventListener\main.py:22
 msgid "This plugin listens to the events provided by the game SDK and the log files."
 msgstr ""
+"Dieses Plugin hört auf die Events die vom SDK des Spiels und den Log Dateien "
+"bereitgestellt werden."
 
 #: .\Plugins\HUD\elements\acc.py:9 .\Plugins\HUD\main.py:320
 #: .\Plugins\HUD\main.py:324
@@ -2371,11 +2383,13 @@ msgstr "Wenn diese Option aktiviert ist, wird die Karte nicht über FPS-Probleme
 
 #: .\Plugins\Map\ui.py:150
 msgid "Takeover When Unreliable"
-msgstr ""
+msgstr "Übernehmen wenn Unzuverlässig"
 
 #: .\Plugins\Map\ui.py:151
 msgid "When enabled, the map will automatically take over control when the truck is not following the route correctly."
 msgstr ""
+"Wenn aktiviert, wird die Karte automatisch die Kontrolle übernehmen, wenn "
+"der LKW die Route nicht korrekt verfolgt."
 
 #: .\Plugins\Map\ui.py:183
 msgid "Automatic Tolls"
@@ -2741,7 +2755,7 @@ msgstr "Dieses Plugin stellt einen WebSocket-Server für die ETS2LA-Visualisieru
 
 #: .\main.py:147
 msgid "Checking mirrors..."
-msgstr ""
+msgstr "Spiegel überprüfen..."
 
 #: .\main.py:161
 msgid "- Reached {0} in {1:.0f}ms"
