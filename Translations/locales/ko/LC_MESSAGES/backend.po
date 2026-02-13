@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA Backend 1.0.0\n"
 "POT-Creation-Date: 2026-02-01 15:00\n"
-"PO-Revision-Date: 2026-02-13 07:27+0000\n"
+"PO-Revision-Date: 2026-02-13 16:09+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/backend/ko/>"
 "\n"
@@ -1960,47 +1960,48 @@ msgstr "ACC가 신호등을 처리하는 방식을 선택하세요. 일반 모�
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:233
 msgid "Speed Control"
-msgstr ""
+msgstr "속도 제어"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:236
 msgid "Curve Settings"
-msgstr ""
+msgstr "커브 설정"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:238
 msgid "Coefficient of Friction"
-msgstr ""
+msgstr "마찰 계수"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:239
 msgid "The coefficient of friction used for the ACC calculations. Higher values allow the truck to drive faster in curves."
-msgstr ""
+msgstr "ACC 계산에 사용되는 마찰 계수입니다. 값이 높을수록 커브에서 트럭이 더 빠르게 "
+"주행할 수 있습니다."
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:250
 msgid "Speed Limit Settings"
-msgstr ""
+msgstr "제한 속도 설정"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:262
 msgid "Maximum Speed"
-msgstr ""
+msgstr "최고 속도"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:264
 msgid "The maximum speed ACC will drive at. Set this to 0 to disable."
-msgstr ""
+msgstr "ACC가 주행할 최고 속도입니다. 0으로 설정하면 기능이 비활성화됩니다."
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:281
 msgid "Fallback speed"
-msgstr ""
+msgstr "안전 속도"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:283
 msgid "The speed to drive when the game tells us that the speed limit is 0 km/h."
-msgstr ""
+msgstr "게임에서 제한 속도를 0km/h로 알려줄 때 주행할 속도입니다."
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:293
 msgid "Ignore Speed Limit"
-msgstr ""
+msgstr "제한 속도 무시"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:294
 msgid "Whether the ACC should ignore the speed limit."
-msgstr ""
+msgstr "ACC가 제한 속도를 무시할지 여부를 설정합니다."
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:305
 msgid "Speed Offset Type"
