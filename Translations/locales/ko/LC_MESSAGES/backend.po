@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA Backend 1.0.0\n"
 "POT-Creation-Date: 2026-02-01 15:00\n"
-"PO-Revision-Date: 2026-02-13 16:10+0000\n"
+"PO-Revision-Date: 2026-02-13 16:16+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/backend/ko/>"
 "\n"
@@ -2017,55 +2017,63 @@ msgstr "속도 오프셋"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:312
 msgid "The speed offset to apply to all speedlimits. Please note that you can also change this dynamically with the keybinds in the controls."
-msgstr ""
+msgstr "모든 제한 속도에 적용할 속도 오프셋입니다. 참고로 컨트롤 설정의 키 바인딩으로"
+" 이 값을 실시간으로 변경할 수도 있습니다."
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:324
 msgid "PID"
-msgstr ""
+msgstr "PID 제어"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:327
 msgid "Show Debug Data"
-msgstr ""
+msgstr "디버그 데이터 표시"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:328
 msgid "Show ACC debug information on the AR overlay, can help when tuning the PID controller."
-msgstr ""
+msgstr "AR 오버레이에 ACC 디버그 정보를 표시합니다. PID 제어기 튜닝 시 유용할 수 있습"
+"니다."
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:337
 msgid "Unlock PID"
-msgstr ""
+msgstr "PID 잠금 해제"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:338
 msgid "You can unlock the PID settings to adjust them manually. This isn't recommended unless you know what a PID is and how you can tune it correctly."
 msgstr ""
+"PID 설정을 잠금 해제하여 수동으로 조정할 수 있습니다. PID가 무엇인지, 올바른 "
+"튜닝 방법을 알고 있는 경우가 아니라면 권장되지 않습니다."
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:347
 msgid "PID Kp"
-msgstr ""
+msgstr "PID Kp"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:348
 msgid "Are we there yet? No? Then we need to accelerate more! (Proportional gain for the PID controller.)"
-msgstr ""
+msgstr "아직 도착 안 했어요? 아니요? 그럼 더 가속해야죠! (PID 제어기의 비례 게인입니"
+"다.)"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:358
 msgid "PID Ki"
-msgstr ""
+msgstr "PID Ki"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:359
 msgid "Has it been a while since we were there? Then we need to accelerate more! (Integral gain for the PID controller.)"
-msgstr ""
+msgstr "목표 지점을 떠난 지 오래됐나요? 그럼 더 가속해야죠! (PID 제어기의 적분 게인입"
+"니다.)"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:369
 msgid "PID Kd"
-msgstr ""
+msgstr "PID Kd"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:370
 msgid "How fast are we approaching the target? If we are approaching too fast, we need to decelerate more! (Derivative gain for the PID controller.)"
-msgstr ""
+msgstr "목표에 얼마나 빠르게 접근하고 있을까요? 너무 빠르게 접근 중이라면 더 감속해야"
+"죠! (PID 제어기의 미분 게인입니다.)"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:381
 msgid "This video visually explains how a PID controller works. Please watch it fully if you are not familiar with them."
-msgstr ""
+msgstr "이 비디오는 PID 제어기의 작동 방식을 시각적으로 설명합니다. PID 제어기에 익숙"
+"하지 않다면 끝까지 시청해 주세요."
 
 #: .\Plugins\CollisionAvoidance\main.py:19
 msgid "Provide collision avoidance when inside intersections."
