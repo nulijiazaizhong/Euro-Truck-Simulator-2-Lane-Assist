@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA Backend 1.0.0\n"
 "POT-Creation-Date: 2026-02-01 15:00\n"
-"PO-Revision-Date: 2026-02-13 16:16+0000\n"
+"PO-Revision-Date: 2026-02-13 17:08+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/backend/ko/>"
 "\n"
@@ -2077,74 +2077,77 @@ msgstr "이 비디오는 PID 제어기의 작동 방식을 시각적으로 설�
 
 #: .\Plugins\CollisionAvoidance\main.py:19
 msgid "Provide collision avoidance when inside intersections."
-msgstr ""
+msgstr "교차로 내에서 충돌 방지 기능을 제공합니다."
 
 #: .\Plugins\CollisionAvoidance\main.py:119
 msgid "Collision avoidance disabled"
-msgstr ""
+msgstr "충돌 방지 비활성화됨"
 
 #: .\Plugins\CollisionAvoidance\main.py:127
 msgid "Collision avoidance enabled"
-msgstr ""
+msgstr "충돌 방지 활성화됨"
 
 #: .\Plugins\CollisionAvoidance\ui.py:38
 msgid "These settings will affect how ETS2LA reacts to traffic around it. Please note that this does not affect lane changes."
-msgstr ""
+msgstr "이 설정들은 ETS2LA가 주변 교통에 반응하는 방식에 영향을 미칩니다. 단, 차선 변"
+"경에는 영향을 미치지 않습니다."
 
 #: .\Plugins\CollisionAvoidance\ui.py:44 .\Plugins\Map\ui.py:179
 #: .\Plugins\Map\ui.py:204
 msgid "[Experimental]"
-msgstr ""
+msgstr "[실험적 기능]"
 
 #: .\Plugins\CollisionAvoidance\ui.py:51
 msgid "Sensitivity"
-msgstr ""
+msgstr "민감도"
 
 #: .\Plugins\CollisionAvoidance\ui.py:52
 msgid "How close a vehicle has to be to the truck's path to be considered a threat. Higher values make the system more sensitive."
-msgstr ""
+msgstr "차량이 트럭의 주행 경로에 얼마나 가까이 있어야 위협으로 간주할지 설정합니다. "
+"값이 높을수록 시스템이 더 민감하게 반응합니다."
 
 #: .\Plugins\CollisionAvoidance\ui.py:67
 msgid "Max Speed"
-msgstr ""
+msgstr "최대 속도"
 
 #: .\Plugins\CollisionAvoidance\ui.py:68
 msgid "The maximum speed the truck can be going for collision avoidance to be active."
-msgstr ""
+msgstr "충돌 방지 기능이 활성화되는 최고 속도입니다."
 
 #: .\Plugins\CollisionAvoidance\ui.py:81
 msgid "Lookahead Time"
-msgstr ""
+msgstr "전방 예측 시간"
 
 #: .\Plugins\CollisionAvoidance\ui.py:82
 msgid "How far ahead the system looks for potential collisions."
-msgstr ""
+msgstr "시스템이 잠재적인 충돌을 감지하기 위해 얼마나 먼 미래까지 예측할지 설정합니다"
+"."
 
 #. TRANSLATORS: This means seconds, basically 3s = 3 seconds
 #: .\Plugins\CollisionAvoidance\ui.py:84
 msgid "s"
-msgstr ""
+msgstr "초"
 
 #: .\Plugins\CollisionAvoidance\ui.py:93
 msgid "Announce State"
-msgstr ""
+msgstr "상태 알림"
 
 #: .\Plugins\CollisionAvoidance\ui.py:94
 msgid "Announce when collision avoidance is activated or deactivated."
-msgstr ""
+msgstr "충돌 방지가 활성화 또는 비활성화될 때 알림을 제공합니다."
 
 #: .\Plugins\EventListener\main.py:20
 msgid "Event Listener"
-msgstr ""
+msgstr "이벤트 리스너"
 
 #: .\Plugins\EventListener\main.py:22
 msgid "This plugin listens to the events provided by the game SDK and the log files."
-msgstr ""
+msgstr "이 플러그인은 게임 SDK와 로그 파일에서 제공하는 이벤트를 수신합니다."
 
 #: .\Plugins\HUD\elements\acc.py:9 .\Plugins\HUD\main.py:320
 #: .\Plugins\HUD\main.py:324
 msgid "ACC Information"
-msgstr ""
+msgstr "적응형 크루즈 컨트롤(ACC) 정보"
 
 #: .\Plugins\HUD\elements\acc.py:10
 msgid "Draw ACC information like vehicle distance and speed."
@@ -2152,27 +2155,27 @@ msgstr "차량 거리 및 속도 등 ACC 정보를 표시합니다."
 
 #: .\Plugins\HUD\elements\acceleration.py:9
 msgid "Acceleration"
-msgstr ""
+msgstr "가속도"
 
 #: .\Plugins\HUD\elements\acceleration.py:10
 msgid "Draw the current acceleration of the truck."
-msgstr ""
+msgstr "트럭의 현재 가속도를 표시합니다."
 
 #: .\Plugins\HUD\elements\assists.py:16 .\Plugins\HUD\main.py:49
 msgid "Assist Information"
-msgstr ""
+msgstr "주행 보조 정보"
 
 #: .\Plugins\HUD\elements\assists.py:17
 msgid "Draw ACC and Steering status information."
-msgstr ""
+msgstr "ACC 및 조향 상태 정보를 표시합니다."
 
 #: .\Plugins\HUD\elements\closest.py:10 .\Plugins\HUD\main.py:51
 msgid "Closest City"
-msgstr ""
+msgstr "가장 가까운 도시"
 
 #: .\Plugins\HUD\elements\closest.py:11
 msgid "Displays the closest city and its distance ( relative to the text )."
-msgstr ""
+msgstr "가장 가까운 도시와 그 거리를 표시합니다(텍스트 기준 상대적 위치)."
 
 #: .\Plugins\HUD\elements\fuel.py:7
 msgid "Fuel Status"
