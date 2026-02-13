@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA Backend 1.0.0\n"
 "POT-Creation-Date: 2026-02-01 15:00\n"
-"PO-Revision-Date: 2026-02-13 16:09+0000\n"
+"PO-Revision-Date: 2026-02-13 16:10+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/backend/ko/>"
 "\n"
@@ -2005,15 +2005,15 @@ msgstr "ACC가 제한 속도를 무시할지 여부를 설정합니다."
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:305
 msgid "Speed Offset Type"
-msgstr ""
+msgstr "속도 오프셋 유형"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:307
 msgid "Select the type of speed offset to apply."
-msgstr ""
+msgstr "적용할 속도 오프셋 유형을 선택하세요."
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:311
 msgid "Speed Offset"
-msgstr ""
+msgstr "속도 오프셋"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:312
 msgid "The speed offset to apply to all speedlimits. Please note that you can also change this dynamically with the keybinds in the controls."
