@@ -189,6 +189,10 @@ class Plugin(ETS2LAPlugin):
         data.enabled = False
         Play("warning")
         self.tags.status = {"Map": data.enabled}
+        if settings.PauseWhenTakeover:
+            data.controller.pause = True
+            time.sleep(1/10) # wait for the game to register
+            data.controller.pause = False
 
     @events.on("JobFinished")
     def JobFinished(self, event_object, *args, **kwargs):

@@ -124,6 +124,14 @@ class SettingsMenu(ETS2LAPage):
             value = not settings.TakeoverWhenUnreliable
 
         settings.TakeoverWhenUnreliable = value
+        
+    def handle_pause_when_takeover(self, *args):
+        if args:
+            value = args[0]
+        else:
+            value = not settings.PauseWhenTakeover
+
+        settings.PauseWhenTakeover = value
 
     def render(self):
         TitleAndDescription(
@@ -149,10 +157,19 @@ class SettingsMenu(ETS2LAPage):
                 CheckboxWithTitleDescription(
                     title=_("Takeover When Unreliable"),
                     description=_(
-                        "When enabled, the map will automatically take over control when the truck is not following the route correctly."
+                        "When enabled, a takeover event will be automatically triggered when the truck is not following the route correctly."
                     ),
                     default=settings.TakeoverWhenUnreliable,
                     changed=self.handle_takeover_when_unreliable,
+                )
+                
+                CheckboxWithTitleDescription(
+                    title=_("Pause When Takeover"),
+                    description=_(
+                        "When enabled, ETS2LA will pause the game when a takeover is triggered. This is especially useful if you leave the computer for a while."
+                    ),
+                    default=settings.PauseWhenTakeover,
+                    changed=self.handle_pause_when_takeover,
                 )
 
                 Text("Experimental Features", styles.Classname("font-semibold"))
