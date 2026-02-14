@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA Backend 1.0.0\n"
 "POT-Creation-Date: 2026-02-01 15:00\n"
-"PO-Revision-Date: 2026-02-13 17:08+0000\n"
+"PO-Revision-Date: 2026-02-14 13:01+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/backend/ko/>"
 "\n"
@@ -2179,240 +2179,249 @@ msgstr "가장 가까운 도시와 그 거리를 표시합니다(텍스트 기�
 
 #: .\Plugins\HUD\elements\fuel.py:7
 msgid "Fuel Status"
-msgstr ""
+msgstr "연료 잔량"
 
 #: .\Plugins\HUD\elements\fuel.py:8
 msgid "Draw the current fuel status of the truck."
-msgstr ""
+msgstr "트럭의 현재 연료 상태를 표시합니다."
 
 #: .\Plugins\HUD\elements\gap.py:7
 msgid "ACC Gap"
-msgstr ""
+msgstr "ACC 차간 거리"
 
 #: .\Plugins\HUD\elements\gap.py:8
 msgid "Shows the gap to the vehicle in front."
-msgstr ""
+msgstr "앞차와의 거리를 표시합니다."
 
 #: .\Plugins\HUD\elements\gear.py:7 .\Plugins\HUD\main.py:47
 msgid "RPM & Gear"
-msgstr ""
+msgstr "RPM & 기어"
 
 #: .\Plugins\HUD\elements\gear.py:8
 msgid "Draw the current RPM and gear of the truck."
-msgstr ""
+msgstr "트럭의 현재 RPM 및 기어를 표시합니다."
 
 #: .\Plugins\HUD\elements\income.py:7
 msgid "Income"
-msgstr ""
+msgstr "수입"
 
 #: .\Plugins\HUD\elements\income.py:8
 msgid "Shows the income from the current job."
-msgstr ""
+msgstr "현재 작업의 수입을 표시합니다."
 
 #: .\Plugins\HUD\elements\income.py:27
 msgid "No job"
-msgstr ""
+msgstr "작업 없음"
 
 #: .\Plugins\HUD\elements\income.py:47
 msgid "Job Income"
-msgstr ""
+msgstr "운송 수입"
 
 #: .\Plugins\HUD\elements\media.py:21 .\Plugins\HUD\main.py:47
 #: .\Plugins\HUD\main.py:50
 msgid "Media"
-msgstr ""
+msgstr "미디어"
 
 #: .\Plugins\HUD\elements\media.py:22
 msgid "Displays media information such as song title, artist and playback progress."
-msgstr ""
+msgstr "노래 제목, 아티스트, 재생 진행 상태 등 미디어 정보를 표시합니다."
 
 #: .\Plugins\HUD\elements\media.py:27
 msgid "No Media Playing"
-msgstr ""
+msgstr "재생 중인 미디어 없음"
 
 #: .\Plugins\HUD\elements\media.py:28 .\Plugins\HUD\elements\media.py:72
 msgid "No Artist"
-msgstr ""
+msgstr "아티스트 정보 없음"
 
 #: .\Plugins\HUD\elements\media.py:71
 msgid "No Title"
-msgstr ""
+msgstr "제목 정보 없음"
 
 #: .\Plugins\HUD\elements\navigation.py:9
 msgid "Navigation"
-msgstr ""
+msgstr "내비게이션"
 
 #: .\Plugins\HUD\elements\navigation.py:10
 msgid "Draw navigation information."
-msgstr ""
+msgstr "내비게이션 정보를 표시합니다."
 
 #. TRANSLATORS: "arrival" is the text in the bottom right corner of the navigation widget
 #: .\Plugins\HUD\elements\navigation.py:71
 msgid "arrival"
-msgstr ""
+msgstr "도착 예정"
 
 #: .\Plugins\HUD\elements\power.py:10
 msgid "Throttle / Brake"
-msgstr ""
+msgstr "스로틀 / 브레이크"
 
 #: .\Plugins\HUD\elements\power.py:11
 msgid "Display current throttle and brake percentage."
-msgstr ""
+msgstr "현재 스로틀 및 브레이크 비율(%)을 표시합니다."
 
 #: .\Plugins\HUD\elements\semaphores.py:8 .\Plugins\HUD\main.py:321
 #: .\Plugins\HUD\main.py:324
 msgid "Traffic Lights"
-msgstr ""
+msgstr "신호등"
 
 #: .\Plugins\HUD\elements\semaphores.py:9
 msgid "Draw traffic light information."
-msgstr ""
+msgstr "신호등 정보를 표시합니다."
 
 #: .\Plugins\HUD\elements\speed.py:8 .\Plugins\HUD\main.py:47
 #: .\Plugins\TTS\main.py:159
 msgid "Speed"
-msgstr ""
+msgstr "속도"
 
 #: .\Plugins\HUD\elements\speed.py:9
 msgid "A normal speed display, will also show speed limit changes."
-msgstr ""
+msgstr "일반 속도 표시이며, 제한 속도 변경 사항도 함께 보여줍니다."
 
 #: .\Plugins\HUD\elements\steering.py:9 .\Plugins\HUD\main.py:322
 #: .\Plugins\HUD\main.py:324
 msgid "Steering Line"
-msgstr ""
+msgstr "주행 경로선"
 
 #: .\Plugins\HUD\elements\steering.py:10
 msgid "Draw steering line from Map."
-msgstr ""
+msgstr "지도에서 조향선을 표시합니다."
 
 #: .\Plugins\HUD\main.py:25
 msgid "Creates a heads up display on the windshield. Needs the AR plugin to work."
-msgstr ""
+msgstr "앞유리에 헤드업 디스플레이(HUD)를 생성합니다. 이 기능은 AR 플러그인이 필요합"
+"니다."
 
 #: .\Plugins\HUD\ui.py:121 .\Plugins\HUD\ui.py:344
 msgid "Enable"
-msgstr ""
+msgstr "활성화"
 
 #: .\Plugins\HUD\ui.py:121 .\Plugins\HUD\ui.py:344
 msgid "Disable"
-msgstr ""
+msgstr "비활성화"
 
 #: .\Plugins\HUD\ui.py:128
 msgid "This plugin provides a HUD using the AR plugin as the renderer."
-msgstr ""
+msgstr "이 플러그인은 AR 플러그인을 렌더러로 사용하여 HUD를 제공합니다."
 
 #: .\Plugins\HUD\ui.py:132
 msgid "Please enable the plugin to edit the settings."
-msgstr ""
+msgstr "설정을 수정하려면 플러그인을 활성화해 주세요."
 
 #: .\Plugins\HUD\ui.py:138
 msgid "Transform"
-msgstr ""
+msgstr "변환"
 
 #: .\Plugins\HUD\ui.py:142
 msgid "Offset X"
-msgstr ""
+msgstr "오프셋 X"
 
 #: .\Plugins\HUD\ui.py:143
 msgid "The horizontal offset of the HUD."
-msgstr ""
+msgstr "HUD의 가로 오프셋입니다."
 
 #: .\Plugins\HUD\ui.py:151
 msgid "Offset Y"
-msgstr ""
+msgstr "오프셋 Y"
 
 #: .\Plugins\HUD\ui.py:152
 msgid "The vertical offset of the HUD."
-msgstr ""
+msgstr "HUD의 세로 오프셋입니다."
 
 #: .\Plugins\HUD\ui.py:160
 msgid "Offset Z"
-msgstr ""
+msgstr "오프셋 Z"
 
 #: .\Plugins\HUD\ui.py:161
 msgid "The depth offset of the HUD."
-msgstr ""
+msgstr "HUD의 깊이 오프셋입니다."
 
 #: .\Plugins\HUD\ui.py:170
 msgid "Widget Sizing"
-msgstr ""
+msgstr "위젯 크기"
 
 #: .\Plugins\HUD\ui.py:172
 msgid "These settings control the sizing of the widgets."
-msgstr ""
+msgstr "이 설정들은 위젯의 크기를 조정합니다."
 
 #: .\Plugins\HUD\ui.py:181
 msgid "Widget Scaling"
-msgstr ""
+msgstr "위젯 배율"
 
 #: .\Plugins\HUD\ui.py:182
 msgid "The scaling factor for the widgets. 1 is normal size, 0.5 is half size, 2 is double size."
-msgstr ""
+msgstr "위젯의 배율 요소입니다. 1은 기본 크기, 0.5는 절반 크기, 2는 두 배 크기입니다."
 
 #: .\Plugins\HUD\ui.py:189
 msgid "Scale Height"
-msgstr ""
+msgstr "높이 배율"
 
 #: .\Plugins\HUD\ui.py:190
 msgid "Scale the height of widgets too, please note that this will cause layout issues with some widgets, use with caution."
-msgstr ""
+msgstr "위젯의 높이도 함께 조절합니다. 일부 위젯에서 레이아웃 문제가 발생할 수 있으니"
+" 주의해서 사용하세요."
 
 #: .\Plugins\HUD\ui.py:198
 msgid "Widget Background"
-msgstr ""
+msgstr "위젯 배경"
 
 #: .\Plugins\HUD\ui.py:200
 msgid "You can control how much the widget background should be darkened by, either all the time or just during the day."
-msgstr ""
+msgstr "위젯 배경의 어두운 정도(밝기)를 조절할 수 있습니다. 항상 어둡게 하거나, 낮에"
+"만 어둡게 하는 옵션을 선택할 수 있습니다."
 
 #: .\Plugins\HUD\ui.py:208
 msgid "Darkness"
-msgstr ""
+msgstr "어두운 정도"
 
 #: .\Plugins\HUD\ui.py:209
 msgid "The darkness of the widget background. 0 is no darkness, 1 is fully dark."
-msgstr ""
+msgstr "위젯 배경의 어두운 정도입니다. 0은 어둡지 않음, 1은 완전히 어두움을 의미합니"
+"다."
 
 #: .\Plugins\HUD\ui.py:220
 msgid "Day Darkness"
-msgstr ""
+msgstr "주간 어두운 정도"
 
 #: .\Plugins\HUD\ui.py:221
 msgid "The darkness of the widget background during the day. 0 is no darkness, 1 is fully dark."
-msgstr ""
+msgstr "위젯 배경의 주간 어두운 정도입니다. 0은 어둡지 않음, 1은 완전히 어두움을 의미"
+"합니다."
 
 #: .\Plugins\HUD\ui.py:232
 msgid "Elements"
-msgstr ""
+msgstr "구성 요소"
 
 #: .\Plugins\HUD\ui.py:247
 msgid "Enabled Widgets"
-msgstr ""
+msgstr "활성화된 위젯"
 
 #: .\Plugins\HUD\ui.py:249
 msgid "This displays your enabled widgets and their respective sizes. Click one to disable it, you cannot yet move them around, you will instead have to Disable -> Enable to get them where you want them."
 msgstr ""
+"이 영역에는 활성화된 위젯과 각 위젯의 크기가 표시됩니다. 위젯을 클릭하면 비활"
+"성화할 수 있습니다. 현재 위젯을 자유롭게 이동할 수는 없으며, 원하는 위치에 배"
+"치하려면 위젯을 비활성화한 후 다시 활성화해야 합니다."
 
 #: .\Plugins\HUD\ui.py:296
 msgid "Available Widgets"
-msgstr ""
+msgstr "사용 가능한 위젯"
 
 #: .\Plugins\HUD\ui.py:298
 msgid "These widgets are available to be enabled:"
-msgstr ""
+msgstr "활성화할 수 있는 위젯 목록입니다:"
 
 #: .\Plugins\HUD\ui.py:308
 msgid "Renderers"
-msgstr ""
+msgstr "렌더러"
 
 #: .\Plugins\HUD\ui.py:310
 msgid "These renderers are used to draw non anchored elements. These are usually elements in the game world that move around."
-msgstr ""
+msgstr "이 렌더러들은 고정되지 않은 요소를 그리는 데 사용됩니다. 이는 주로 게임 세계"
+"에서 움직이는 요소들입니다."
 
 #: .\Plugins\Map\controls.py:6
 msgid "Toggle Steering"
-msgstr ""
+msgstr "조향 켜기/끄기"
 
 #: .\Plugins\Map\controls.py:8
 msgid "When the Map plugin is running, this will toggle the steering on/off."
