@@ -344,8 +344,7 @@ class Plugin(ETS2LAPlugin):
 
             external_map_start_time = time.perf_counter()
             if data.external_data_changed:
-                external_data = json.dumps(data.external_data)
-                self.tags.map = json.loads(external_data)
+                self.tags.map = data.external_data
                 self.tags.map_update_time = data.external_data_time
                 data.external_data_changed = False
 
