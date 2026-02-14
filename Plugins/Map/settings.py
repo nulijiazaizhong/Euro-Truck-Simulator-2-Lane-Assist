@@ -4,6 +4,8 @@ from typing import Literal
 
 class Settings(ETS2LASettings):
     InternalVisualisation: bool = False
+    IntnernalVisualizationWindowScale: float = 1.0
+    InternalVisualizationPerformance: bool = False
     ComputeSteeringData: bool = True
     SectorSize: int = 300
     LoadDistance: int = 600

@@ -102,6 +102,19 @@ class SettingsMenu(ETS2LAPage):
             value = not settings.InternalVisualisation
         settings.InternalVisualisation = value
 
+    def handle_internal_visualisation_performance(self, *args):
+        if args:
+            value = args[0]
+        else:
+            value = not settings.InternalVisualizationPerformance
+        settings.InternalVisualizationPerformance = value
+    
+    def handle_internal_visualisation_window_scale(self, value):
+        if isinstance(value, str):
+            value = float(value)
+
+        settings.IntnernalVisualizationWindowScale = value
+
     def handle_override_lane_offsets(self, *args):
         if args:
             value = args[0]
@@ -519,6 +532,21 @@ class SettingsMenu(ETS2LAPage):
                             description="Enable internal visualisation for debugging.",
                             changed=self.handle_internal_visualisation,
                             default=settings.InternalVisualisation,
+                        )
+                        CheckboxWithTitleDescription(
+                            title="Internal Visualisation Performance Mode",
+                            description="Enable performance mode for internal visualisation (will result in less detail).",
+                            changed=self.handle_internal_visualisation_performance,
+                            default=settings.InternalVisualizationPerformance,
+                        )
+                        SliderWithTitleDescription(
+                            title="Internal Visualization Window Scale",
+                            description="Scale the size of the internal visualization window.",
+                            default=settings.IntnernalVisualizationWindowScale, 
+                            min=0.1,
+                            max=1.0,
+                            step=0.1,
+                            changed=self.handle_internal_visualisation_window_scale,
                         )
                         ButtonWithTitleDescription(
                             title="Reload Lane Offsets",
