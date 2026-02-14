@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA Backend 1.0.0\n"
 "POT-Creation-Date: 2026-02-01 15:00\n"
-"PO-Revision-Date: 2026-02-14 13:01+0000\n"
+"PO-Revision-Date: 2026-02-14 17:09+0000\n"
 "Last-Translator: bot_lapis <botlapis@ets2la.com>\n"
 "Language-Team: Korean <http://weblate.ets2la.com/projects/ets2la/backend/ko/>"
 "\n"
@@ -1497,7 +1497,7 @@ msgid ""
 msgstr ""
 "시각화 탭 작동에 필요한 플러그인을 활성화합니다.\n"
 "\n"
-"이 옵션은 시각화 탭 사용을 위해 반드시 필요합니다"
+"**이 옵션은 시각화 탭 사용을 위해 반드시 필요합니다**"
 
 #: .\Pages\plugins.py:65 .\Plugins\CollisionAvoidance\main.py:17
 #: .\Plugins\CollisionAvoidance\ui.py:15 .\Plugins\CollisionAvoidance\ui.py:37
@@ -2425,505 +2425,529 @@ msgstr "조향 켜기/끄기"
 
 #: .\Plugins\Map\controls.py:8
 msgid "When the Map plugin is running, this will toggle the steering on/off."
-msgstr ""
+msgstr "지도 플러그인 실행 중에는 이 기능이 조향을 켜거나 끕니다."
 
 #: .\Plugins\Map\main.py:54 .\Plugins\Map\ui.py:28
 msgid "Map"
-msgstr ""
+msgstr "지도"
 
 #: .\Plugins\Map\main.py:55
 msgid "This plugin provides steering and navigation features. It is the most important plugin in ETS2LA."
-msgstr ""
+msgstr "이 플러그인은 조향 및 내비게이션 기능을 제공합니다. ETS2LA에서 가장 중요한 플"
+"러그인입니다."
 
 #: .\Plugins\Map\main.py:241
 msgid "Error initializing Map plugin: {0}"
-msgstr ""
+msgstr "지도 플러그인 초기화 오류: {0}"
 
 #: .\Plugins\Map\main.py:277
 msgid "Preparing to load data..."
-msgstr ""
+msgstr "데이터 로딩 준비 중..."
 
 #: .\Plugins\Map\main.py:291
 msgid "Waiting for game data selection in the Settings -> Map..."
-msgstr ""
+msgstr "설정 -> 지도에서 게임 데이터 선택을 기다리는 중..."
 
 #: .\Plugins\Map\main.py:325
 msgid "Invalid steering value received"
-msgstr ""
+msgstr "유효하지 않은 조향 값 수신됨"
 
 #: .\Plugins\Map\main.py:352
 msgid "Error in Map plugin run loop: {0}"
-msgstr ""
+msgstr "지도 플러그인 실행 루프 오류: {0}"
 
 #: .\Plugins\Map\main.py:413
 msgid "Warning: Steering might be compromised due to low FPS. ({0} fps)"
-msgstr ""
+msgstr "경고: 낮은 FPS({0}fps)로 인해 조향 성능이 저하될 수 있습니다"
 
 #: .\Plugins\Map\ui.py:37
 msgid "Not Found"
-msgstr ""
+msgstr "찾을 수 없음"
 
 #: .\Plugins\Map\ui.py:130
 msgid "Map Settings"
-msgstr ""
+msgstr "지도 설정"
 
 #: .\Plugins\Map\ui.py:131
 msgid "Configure the settings for the Map plugin. Here you can adjust various options related to navigation, steering, and data handling."
-msgstr ""
+msgstr "지도 플러그인의 설정을 구성합니다. 여기에서 내비게이션, 조향 및 데이터 처리와"
+" 관련된 다양한 옵션을 조정할 수 있습니다."
 
 #: .\Plugins\Map\ui.py:141
 msgid "Disable FPS Notices"
-msgstr ""
+msgstr "FPS 알림 비활성화"
 
 #: .\Plugins\Map\ui.py:142
 msgid "When enabled map will not notify of any FPS related issues."
-msgstr ""
+msgstr "활성화 시 지도가 FPS 관련 문제 알림을 표시하지 않습니다."
 
 #: .\Plugins\Map\ui.py:150
 msgid "Takeover When Unreliable"
-msgstr ""
+msgstr "불안정 시 운전자 인계"
 
 #: .\Plugins\Map\ui.py:151
 msgid "When enabled, the map will automatically take over control when the truck is not following the route correctly."
-msgstr ""
+msgstr "활성화하면 트럭이 경로를 올바르게 따르지 않을 때 지도가 자동으로 제어를 인계"
+"합니다."
 
 #: .\Plugins\Map\ui.py:183
 msgid "Automatic Tolls"
-msgstr ""
+msgstr "통행료 자동 결제"
 
 #: .\Plugins\Map\ui.py:186
 msgid "Attempt to automatically solve tolls. This may or may not work. Requires a restart to fully reload toll data."
 msgstr ""
+"통행료를 자동으로 처리하려고 시도합니다. 작동할 수도 있고 그렇지 않을 수도 있"
+"습니다. 통행료 데이터를 완전히 다시 불러오려면 재시작이 필요합니다."
 
 #: .\Plugins\Map\ui.py:240
 msgid "Compute Steering Data"
-msgstr ""
+msgstr "조향 데이터 계산"
 
 #: .\Plugins\Map\ui.py:241
 msgid "When enabled map will compute and send steering data to the game."
-msgstr ""
+msgstr "활성화 시 지도가 조향 데이터를 계산하여 게임으로 전송합니다."
 
 #: .\Plugins\Map\ui.py:248
 msgid "Drive Based On Trailer"
-msgstr ""
+msgstr "트레일러 기반 주행"
 
 #: .\Plugins\Map\ui.py:249
 msgid "When enabled map will take into account the trailer when calculating the current steering point."
-msgstr ""
+msgstr "활성화 시 지도가 트레일러를 고려하여 현재 조향 지점을 계산합니다."
 
 #: .\Plugins\Map\ui.py:256
 msgid "Steering Smoothness"
-msgstr ""
+msgstr "조향 부드러움"
 
 #: .\Plugins\Map\ui.py:257
 msgid "Set the time we average the steering data over. A value of 0.5 means that the steering from the last half a second is used to calculate the current value."
-msgstr ""
+msgstr "조향 데이터를 평균화하는 시간을 설정합니다. 값이 0.5이면 지난 0.5초 동안의 조"
+"향 데이터를 사용하여 현재 값을 계산합니다."
 
 #: .\Plugins\Map\ui.py:268
 msgid "Data"
-msgstr ""
+msgstr "데이터"
 
 #: .\Plugins\Map\ui.py:287
 msgid "NOTE!"
-msgstr ""
+msgstr "참고!"
 
 #: .\Plugins\Map\ui.py:289
 msgid "If you encounter an error after changing the changing the data please restart the plugin! If this doesn't resolve your issue then please contact the data creators or the developers on Discord!"
 msgstr ""
+"데이터 변경 후 오류가 발생하면 플러그인을 재시작해 주세요! 그래도 문제가 해결"
+"되지 않으면 데이터 제작자나 Discord의 개발자에게 문의해 주세요!"
 
 #: .\Plugins\Map\ui.py:297
 msgid "Please select the data you want to use. This will begin the download process and Map will be ready once the data is loaded."
-msgstr ""
+msgstr "사용할 데이터를 선택해 주세요. 선택 시 다운로드가 시작되며, 데이터가 로드되면"
+" 지도를 사용할 수 있습니다."
 
 #: .\Plugins\Map\ui.py:309
 msgid "Update Data"
-msgstr ""
+msgstr "데이터 업데이트"
 
 #: .\Plugins\Map\ui.py:310
 msgid "Update the currently selected data, this can be helpful if the data is corrupted or there has been an update."
-msgstr ""
+msgstr "현재 선택된 데이터를 업데이트합니다. 데이터가 손상되었거나 업데이트가 있는 경"
+"우 유용할 수 있습니다."
 
 #: .\Plugins\Map\ui.py:318
 msgid "Traffic Side"
-msgstr ""
+msgstr "차선 통행 방향"
 
 #: .\Plugins\Map\ui.py:319
 msgid "This will make the indicators behave correctly when lane changing in left handed or right handed countries."
-msgstr ""
+msgstr "이 설정은 좌측 통행 국가와 우측 통행 국가에서 차선 변경 시 방향 지시등이 올바"
+"르게 작동하도록 합니다."
 
 #: .\Plugins\Map\ui.py:373
 msgid "The download size for this data is"
-msgstr ""
+msgstr "이 데이터의 다운로드 용량은"
 
 #: .\Plugins\Map\ui.py:381
 msgid "that will unpack to a total size of"
-msgstr ""
+msgstr "압축 해제 시 전체 용량은"
 
 #: .\Plugins\NavigationSockets\main.py:123
 msgid "Navigation Sockets"
-msgstr ""
+msgstr "내비게이션 소켓"
 
 #: .\Plugins\NavigationSockets\main.py:125
 msgid "This plugin provides a WebSocket server for navigation data on a world map."
-msgstr ""
+msgstr "이 플러그인은 세계 지도의 내비게이션 데이터를 위한 WebSocket 서버를 제공합니"
+"다."
 
 #: .\Plugins\TTS\main.py:89 .\Plugins\TTS\main.py:199
 msgid "TTS"
-msgstr ""
+msgstr "텍스트 음성 변환"
 
 #: .\Plugins\TTS\main.py:90
 msgid "The TTS plugin provides text-to-speech functionality for accessibility and voiced announcements."
-msgstr ""
+msgstr "TTS 플러그인은 접근성 및 음성 알림을 위한 텍스트 음성 변환 기능을 제공합니다."
 
 #: .\Plugins\TTS\main.py:97
 msgid "Voices"
-msgstr ""
+msgstr "TTS 음성"
 
 #: .\Plugins\TTS\main.py:110
 msgid "Please select a provider!"
-msgstr ""
+msgstr "제공자를 선택해 주세요!"
 
 #: .\Plugins\TTS\main.py:115
 msgid "This will show provider information once the plugin is loaded."
-msgstr ""
+msgstr "플러그인이 로드되면 제공자 정보를 표시합니다."
 
 #: .\Plugins\TTS\main.py:121
 msgid "Select TTS provider"
-msgstr ""
+msgstr "TTS 제공자 선택"
 
 #: .\Plugins\TTS\main.py:122
 msgid "Select the TTS provider to use."
-msgstr ""
+msgstr "사용할 TTS 제공자를 선택하세요."
 
 #: .\Plugins\TTS\main.py:130
 msgid "Please select a provider to show voices."
-msgstr ""
+msgstr "음성을 표시하려면 제공자를 선택해 주세요."
 
 #: .\Plugins\TTS\main.py:140 .\Plugins\TTS\main.py:323
 msgid "Voice {0} not found, using default: {1}"
-msgstr ""
+msgstr "음성 {0} 없음, 기본값 {1} 사용"
 
 #: .\Plugins\TTS\main.py:146
 msgid "Select TTS voice"
-msgstr ""
+msgstr "TTS 음성 선택"
 
 #: .\Plugins\TTS\main.py:147
 msgid "Select the TTS voice to use."
-msgstr ""
+msgstr "사용할 TTS 음성을 선택하세요."
 
 #: .\Plugins\TTS\main.py:152
 msgid "Search for a voice..."
-msgstr ""
+msgstr "음성 검색..."
 
 #: .\Plugins\TTS\main.py:153
 msgid "No voices found."
-msgstr ""
+msgstr "음성을 찾을 수 없음."
 
 #: .\Plugins\TTS\main.py:160
 msgid "Set the target speed of the voice."
-msgstr ""
+msgstr "음성 속도를 설정합니다."
 
 #: .\Plugins\TTS\main.py:170
 msgid "Set the target volume of the voice."
-msgstr ""
+msgstr "음성의 볼륨을 설정합니다."
 
 #: .\Plugins\TTS\main.py:178
 msgid "Test Mode"
-msgstr ""
+msgstr "테스트 모드"
 
 #: .\Plugins\TTS\main.py:179
 msgid "Enable test mode to test the TTS provider without loading the game."
-msgstr ""
+msgstr "게임을 실행하지 않고 TTS 제공자를 테스트하려면 테스트 모드를 활성화하세요."
 
 #: .\Plugins\TTS\main.py:186
 msgid "Settings"
-msgstr ""
+msgstr "설정"
 
 #: .\Plugins\TTS\main.py:188
 msgid "Enable Road Proximity Beep"
-msgstr ""
+msgstr "도로 근접 경고음 활성화"
 
 #: .\Plugins\TTS\main.py:189
 msgid "Enable a proximity beep that indicates the distance and angle to the closest road."
-msgstr ""
+msgstr "가장 가까운 도로까지의 거리와 각도를 알려주는 근접 경고음을 활성화합니다."
 
 #: .\Plugins\TTS\main.py:201
 msgid "Text To Speech plugin for accessibility. Some people might also like voiced announcements."
-msgstr ""
+msgstr "접근성을 위한 TTS(텍스트 음성 변환) 플러그인입니다. 음성 알림을 선호하는 분들"
+"께도 유용할 수 있습니다."
 
 #: .\Plugins\TTS\main.py:283
 msgid "Voice {0} not found in provider {1}."
-msgstr ""
+msgstr "제공자 {1}에 음성 {0} 없음."
 
 #: .\Plugins\TTS\main.py:289
 msgid "No provider selected. Cannot select voice."
-msgstr ""
+msgstr "선택된 제공자가 없어 음성을 선택할 수 없습니다."
 
 #: .\Plugins\TTS\main.py:317
 msgid "Loading TTS provider: {0}"
-msgstr ""
+msgstr "TTS 제공자 로딩 중: {0}"
 
 #: .\Plugins\TTS\main.py:329
 msgid "Loading TTS voice: {0}"
-msgstr ""
+msgstr "TTS 음성 로딩 중: {0}"
 
 #: .\Plugins\TTS\main.py:376
 msgid "Map steering enabled."
-msgstr ""
+msgstr "지도 조향이 활성화되었습니다."
 
 #: .\Plugins\TTS\main.py:378
 msgid "Map steering disabled."
-msgstr ""
+msgstr "지도 조향이 비활성화되었습니다."
 
 #: .\Plugins\TTS\main.py:392
 msgid "Adaptive Cruise Control enabled."
-msgstr ""
+msgstr "적응형 크루즈 컨트롤(ACC)이 활성화되었습니다."
 
 #: .\Plugins\TTS\main.py:394
 msgid "Adaptive Cruise Control disabled."
-msgstr ""
+msgstr "적응형 크루즈 컨트롤(ACC)이 비활성화되었습니다."
 
 #: .\Plugins\TTS\main.py:415
 msgid "Closest city is now {city} at a distance of {distance} kilometer."
 msgid_plural "Closest city is now {city} at a distance of {distance} kilometers."
-msgstr[0] ""
+msgstr[0] "가장 가까운 도시가 {city}(으)로 변경되었으며, 거리는 {distance}km입니다."
 
 #: .\Plugins\TTS\main.py:432
 msgid "Speed limit changed to {0} kilometer per hour."
 msgid_plural "Speed limit changed to {0} kilometers per hour."
-msgstr[0] ""
+msgstr[0] "제한 속도가 {0}km/h로 변경되었습니다."
 
 #: .\Plugins\TTS\main.py:448
 msgid "Fuel range is now only {0} kilometer, please refuel soon."
 msgid_plural "Fuel range is now only {0} kilometers, please refuel soon."
-msgstr[0] ""
+msgstr[0] "주행 가능 연료 범위가 이제 {0}km만 남았습니다. 곧 주유해 주세요."
 
 #: .\Plugins\TTS\main.py:457
 msgid "Fuel range is now critical at only {0} kilometer, please refuel as soon as possible."
 msgid_plural "Fuel range is now critical at only {0} kilometers, please refuel as soon as possible."
-msgstr[0] ""
+msgstr[0] "주행 가능 연료 범위가 이제 {0}km만 남아 심각한 수준입니다. 최대한 빨리 주유해"
+" 주세요."
 
 #: .\Plugins\TTS\main.py:484 .\Plugins\TTS\main.py:498
 #: .\Plugins\TTS\main.py:520
 msgid "It's {0} kilometers to the next waypoint."
-msgstr ""
+msgstr "다음 경유지까지 {0}km입니다."
 
 #: .\Plugins\TTS\main.py:539
 msgid "Engine damage is now at {0}%."
-msgstr ""
+msgstr "엔진 데미지가 현재 {0}%입니다."
 
 #: .\Plugins\TTS\main.py:542
 msgid "Cabin damage is now at {0}%."
-msgstr ""
+msgstr "캐빈 데미지가 현재 {0}%입니다."
 
 #: .\Plugins\TTS\main.py:545
 msgid "Chassis damage is now at {0}%."
-msgstr ""
+msgstr "샤시 데미지가 현재 {0}%입니다."
 
 #: .\Plugins\TTS\main.py:549
 msgid "Transmission damage is now at {0}%."
-msgstr ""
+msgstr "변속기 데미지가 현재 {0}%입니다."
 
 #: .\Plugins\TTS\main.py:553
 msgid "Wheel damage is now at {0}%."
-msgstr ""
+msgstr "휠 데미지가 현재 {0}%입니다."
 
 #: .\Plugins\TTS\main.py:556
 msgid "Cargo damage is now at {0}%."
-msgstr ""
+msgstr "화물 데미지가 현재 {0}%입니다."
 
 #: .\Plugins\TTS\main.py:575
 msgid "Speed {0} kilometers per hour, limit {1}, fuel {2}%, and it's {3} kilometers to the next waypoint."
-msgstr ""
+msgstr "속도 {0}km/h, 제한 속도 {1}km/h, 연료 {2}%, 그리고 다음 경유지까지 {3}km입니"
+"다."
 
 #: .\Plugins\TTS\main.py:631 .\Plugins\TTS\main.py:650
 msgid "Traffic light ahead in {distance} meters. Currently {state}."
-msgstr ""
+msgstr "전방 {distance}미터에 신호등이 있습니다. 현재 {state}입니다."
 
 #: .\Plugins\TTS\main.py:641
 msgid "Traffic light changed to {state}. Now at {distance} meters."
-msgstr ""
+msgstr "신호등이 {state}(으)로 변경되었습니다. 현재 {distance}미터 전방에 있습니다."
 
 #: .\Plugins\TTS\main.py:659
 msgid "{distance} meter"
 msgid_plural "{distance} meters"
-msgstr[0] ""
+msgstr[0] "{distance}미터"
 
 #: .\Plugins\TTS\main.py:675
 msgid "Headlights turned on."
-msgstr ""
+msgstr "헤드라이트가 켜졌습니다."
 
 #: .\Plugins\TTS\main.py:677
 msgid "Headlights turned off."
-msgstr ""
+msgstr "헤드라이트가 꺼졌습니다."
 
 #: .\Plugins\TTS\main.py:694
 msgid "Test mode enabled. This is a test message."
-msgstr ""
+msgstr "테스트 모드가 활성화되었습니다. 이것은 테스트 메시지입니다."
 
 #: .\Plugins\VisualizationSockets\main.py:214
 #: .\Plugins\VisualizationSockets\main.py:229
 #: .\Plugins\VisualizationSockets\main.py:387
 msgid "Visualization Sockets"
-msgstr ""
+msgstr "시각화 소켓"
 
 #: .\Plugins\VisualizationSockets\main.py:230
 msgid "This plugin provides a websocket server for the ETS2LA Visualization."
-msgstr ""
+msgstr "이 플러그인은 ETS2LA 시각화를 위한 WebSocket 서버를 제공합니다."
 
 #. TRANSLATORS: Host device in this context means the device that is running ETS2LA.
 #: .\Plugins\VisualizationSockets\main.py:237
 msgid "Host Device"
-msgstr ""
+msgstr "호스트 장치"
 
 #: .\Plugins\VisualizationSockets\main.py:240
 msgid "If you want to view the ETS2LA Visualization on the current device, simply open the 'Visualization' tab on the sidebar, you can then select between the official and Goodnightan mirrors."
 msgstr ""
+"현재 기기에서 ETS2LA 시각화를 보려면 사이드바에서 '시각화' 탭을 열기만 하면 "
+"됩니다. 그런 다음 공식 미러와 Goodnightan 미러 중에서 선택할 수 있습니다."
 
 #: .\Plugins\VisualizationSockets\main.py:247
 msgid "You can also use the following website:"
-msgstr ""
+msgstr "다음 웹사이트를 사용할 수도 있습니다:"
 
 #: .\Plugins\VisualizationSockets\main.py:256
 msgid "Other Device"
-msgstr ""
+msgstr "다른 기기"
 
 #: .\Plugins\VisualizationSockets\main.py:262
 msgid "1. Open the following URL in your device's browser: "
-msgstr ""
+msgstr "1. 기기의 브라우저에서 다음 URL을 여세요. "
 
 #: .\Plugins\VisualizationSockets\main.py:275
 msgid "NOTE: You must load the site as http instead of https. Google Chrome will not work!"
-msgstr ""
+msgstr "참고: 반드시 https 대신 http로 사이트에 접속해야 합니다. 구글 크롬에서는 작동"
+"하지 않습니다!"
 
 #: .\Plugins\VisualizationSockets\main.py:282
 msgid "2. Once the website loads press the red 'Remote Connection' button. If this doesn't connect then enter the following IP address:"
-msgstr ""
+msgstr "2. 웹사이트가 로드되면 빨간색 '원격 연결' 버튼을 누르세요. 연결되지 않으면 다"
+"음 IP 주소를 입력하세요:"
 
 #: .\Plugins\VisualizationSockets\main.py:293
 msgid "3. If you have any issues please verify that your device is on the same network as the host. You should also make sure that your firewall does not block the connection between the devices."
 msgstr ""
+"3. 문제가 발생하면 호스트와 동일한 네트워크에 내 기기가 연결되어 있는지 확인"
+"하세요. 또한 방화벽이 기기 간 연결을 차단하지 않는지 확인해야 합니다."
 
 #: .\Plugins\VisualizationSockets\main.py:300
 msgid "Your IP address could not be found, this is likely due to a network issue. Viewing the visualization externally is not possible."
-msgstr ""
+msgstr "IP 주소를 찾을 수 없습니다. 네트워크 문제로 인한 것 같습니다. 외부에서 시각화"
+"를 볼 수 없습니다."
 
 #: .\Plugins\VisualizationSockets\main.py:309
 msgid "Waiting for plugin start..."
-msgstr ""
+msgstr "플러그인 시작 대기 중..."
 
 #: .\Plugins\VisualizationSockets\main.py:315
 msgid "Waiting for plugin to load..."
-msgstr ""
+msgstr "플러그인 로드 대기 중..."
 
 #: .\Plugins\VisualizationSockets\main.py:319
 msgid "The following clients are currently connected:"
-msgstr ""
+msgstr "현재 다음 클라이언트가 연결되어 있습니다:"
 
 #: .\Plugins\VisualizationSockets\main.py:340
 msgid "Latency: {latency:.2f}ms"
-msgstr ""
+msgstr "지연 시간: {latency:.2f}ms"
 
 #: .\Plugins\VisualizationSockets\main.py:348
 msgid "Channels: {channels}"
-msgstr ""
+msgstr "채널: {channels}"
 
 #: .\Plugins\VisualizationSockets\main.py:358
 msgid "Not acknowledged yet."
-msgstr ""
+msgstr "아직 확인되지 않음."
 
 #: .\Plugins\VisualizationSockets\main.py:363
 msgid "There are no currently connected clients."
-msgstr ""
+msgstr "현재 연결된 클라이언트가 없습니다."
 
 #: .\Plugins\VisualizationSockets\main.py:389
 msgid "This plugin provides a websocket server for the ETS2LA Visualization. It allows you to connect to the visualization from other devices and view the ETS2LA data in real-time."
 msgstr ""
+"이 플러그인은 ETS2LA 시각화를 위한 WebSocket 서버를 제공합니다. 이를 통해 다"
+"른 기기에서 시각화에 연결하여 ETS2LA 데이터를 실시간으로 볼 수 있습니다."
 
 #: .\main.py:147
 msgid "Checking mirrors..."
-msgstr ""
+msgstr "미러 확인 중..."
 
 #: .\main.py:161
 msgid "- Reached {0} in {1:.0f}ms"
-msgstr ""
+msgstr "{0} 연결됨 (소요 시간: {1:.0f}ms)"
 
 #: .\main.py:166
 msgid " - Reached {0} in (TIMEOUT)"
-msgstr ""
+msgstr " -{0} 연결 실패 (시간 초과)"
 
 #: .\main.py:189
 msgid " -- Running post download action for submodule:  Interface  -- "
-msgstr ""
+msgstr " -- 서브모듈: Interface 에 대한 다운로드 후 작업 실행 중 -- "
 
 #: .\main.py:214
 msgid "Running ETS2LA in development mode."
-msgstr ""
+msgstr "개발 모드로 ETS2LA를 실행 중입니다."
 
 #: .\main.py:221
 msgid "No connection to remote UI mirrors. Running locally."
-msgstr ""
+msgstr "원격 UI 미러에 연결할 수 없습니다. 로컬 모드로 실행합니다."
 
 #: .\main.py:234
 msgid "Running UI in China mode"
-msgstr ""
+msgstr "중국 모드로 UI를 실행 중입니다"
 
 #: .\main.py:237
 msgid "> Using mirror {0} for UI."
-msgstr ""
+msgstr "> UI에 미러 {0}를 사용 중입니다."
 
 #: .\main.py:247
 msgid "--no-console cannot be used in combination with --no-ui. The console will not close."
-msgstr ""
+msgstr "--no-console은 --no-ui와 함께 사용할 수 없습니다. 콘솔이 닫히지 않습니다."
 
 #: .\main.py:253
 msgid "Closing console after UI start."
-msgstr ""
+msgstr "UI 시작 후 콘솔을 닫습니다."
 
 #: .\main.py:280
 msgid "Running in the background without a window."
-msgstr ""
+msgstr "창 없이 백그라운드에서 실행 중입니다."
 
 #: .\main.py:284
 msgid "Running UI locally"
-msgstr ""
+msgstr "로컬 모드로 UI를 실행 중입니다"
 
 #: .\main.py:302
 msgid "The window process has crashed!"
-msgstr ""
+msgstr "창 프로세스에 오류가 발생했습니다!"
 
 #: .\main.py:310
 msgid "ETS2LA Overseer started!"
-msgstr ""
+msgstr "ETS2LA 감독자가 시작되었습니다!"
 
 #: .\main.py:341
 msgid "ETS2LA is restarting..."
-msgstr ""
+msgstr "ETS2LA 다시 시작 중..."
 
 #: .\main.py:349
 msgid "Skipping update due to development mode."
-msgstr ""
+msgstr "개발 모드로 인해 업데이트를 건너뜁니다."
 
 #: .\main.py:353
 msgid "ETS2LA is updating..."
-msgstr ""
+msgstr "ETS2LA 업데이트 중..."
 
 #: .\main.py:356
 msgid "Update done... restarting!"
-msgstr ""
+msgstr "업데이트 완료... 재시작합니다!"
 
 #: .\main.py:361
 msgid "ETS2LA has crashed!"
-msgstr ""
+msgstr "ETS2LA에 오류가 발생했습니다!"
 
 #: .\main.py:375
 msgid "Send the above traceback to the developers."
-msgstr ""
+msgstr "위의 오류 추적 정보를 개발자에게 보내 주세요."
 
 #: .\main.py:377
 msgid "ETS2LA has closed."
-msgstr ""
+msgstr "ETS2LA가 종료되었습니다."
 
 #: .\main.py:378
 msgid "Press enter to exit."
-msgstr ""
+msgstr "종료하려면 Enter 키를 누르세요."
