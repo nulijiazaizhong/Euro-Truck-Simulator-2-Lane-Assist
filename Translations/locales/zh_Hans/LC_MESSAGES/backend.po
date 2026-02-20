@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA Backend 1.0.0\n"
 "POT-Creation-Date: 2026-02-01 15:00\n"
-"PO-Revision-Date: 2026-02-03 23:34+0000\n"
-"Last-Translator: goodnightan <goodnightan@ets2la.com>\n"
+"PO-Revision-Date: 2026-02-21 16:20+0000\n"
+"Last-Translator: DarkSide <darkside@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/backend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -29,7 +29,7 @@ msgstr "按键绑定到{device} {action}"
 
 #: .\ETS2LA\Handlers\controls.py:100
 msgid "Refreshing joysticks..."
-msgstr "正在刷新摇杆..."
+msgstr "正在检测游戏控制器..."
 
 #: .\ETS2LA\Handlers\controls.py:114
 msgid "{} connected."
@@ -37,7 +37,7 @@ msgstr "{}已连接。"
 
 #: .\ETS2LA\Handlers\controls.py:116
 msgid "Found joystick: [bold]{name}[/bold] [dim]({uid})[/dim]"
-msgstr "已发现摇杆：[bold]{name}[/bold] [dim]({uid})[/dim]"
+msgstr "检测到游戏控制器：[bold]{name}[/bold] [dim]({uid})[/dim]"
 
 #: .\ETS2LA\Handlers\controls.py:130 .\ETS2LA\Handlers\controls.py:131
 msgid "{} disconnected."
@@ -54,7 +54,7 @@ msgstr "尝试编辑事件时发生异常。"
 
 #: .\ETS2LA\Handlers\controls.py:449
 msgid "Controls listener started."
-msgstr "开始识别控制器。"
+msgstr "开始检测游戏控制器。"
 
 #: .\ETS2LA\Handlers\plugins.py:197
 msgid ""
@@ -246,7 +246,7 @@ msgstr "ETS2LA 的首席开发者与创建者，负责后端与前端。"
 
 #: .\Pages\about.py:50
 msgid "Navigation Detection, Traffic Light Detection, ETS2LA Lite, 'co-owner'"
-msgstr "导航检测、交通信号灯检测、ETS2LA Lite 开发者及“联合创始人”"
+msgstr "导航检测、红绿检测、ETS2LA Lite 开发者及“联合创始人”"
 
 #: .\Pages\about.py:57
 msgid "Various additions and improvements, Object Detection AI models & development"
@@ -254,7 +254,8 @@ msgstr "多项功能新增与改进，目标检测 AI 模型研发"
 
 #: .\Pages\about.py:67
 msgid "ETS2LA game-side SDK developer. Vehicles, Traffic Lights, Camera data and more direct from the game."
-msgstr "ETS2LA 游戏端 SDK 开发者。实现了直接获取游戏内的车辆数据、交通信号灯数据、摄像头数据等实时信息。"
+msgstr "ETS2LA 游戏端 SDK 开发者。实现了直接获取游戏内的车辆数据、红绿灯数据、摄像头"
+"数据等实时信息。"
 
 #: .\Pages\about.py:74
 msgid "Game data extraction and processing"
@@ -362,7 +363,10 @@ msgstr "嘿！"
 
 #: .\Pages\about.py:339
 msgid "I see you've disabled ads. That's totally fine, but you can still support ETS2LA development by donating via Ko-Fi. *Every donation is equal to weeks(!) of ad revenue*, we are eternally grateful for every bit of support we get!"
-msgstr "我看到您已屏蔽了广告。这完全没问题，您依然可以通过 Ko-Fi 捐赠来支持 ETS2LA 的开发。*每一笔捐赠都相当于数周的广告收入*，我们对每一份支持都心怀感激！"
+msgstr ""
+"我看到你已经关闭了广告。这完全没问题，但你仍可以通过 Ko‑Fi 进行捐赠，以此支持"
+" ETS2LA 的开发。每一笔捐赠都相当于数周的广告收入，对于每一份支持，我们都感激"
+"不尽！"
 
 #: .\Pages\about.py:354
 msgid "Donate via Ko-Fi"
@@ -390,7 +394,10 @@ msgstr "关于"
 
 #: .\Pages\about.py:422
 msgid "ETS2LA is a project that aims to provide an easy to use self driving solution for ETS2 and ATS, if you want to learn more then you can visit the github page or the wiki via the sidebar."
-msgstr "ETS2LA 是一个旨在为 ETS2 和 ATS 提供易于使用的自动驾驶解决方案的项目，如果您想了解更多信息，可以访问 github 页面或通过侧边栏访问维基。 ETS2LA 项目致力于为《欧洲卡车模拟2》（ETS2）及《美国卡车模拟》（ATS）提供简单的自动驾驶解决方案。如需了解更多信息，您可通过侧边栏访问项目 GitHub 页面或文档。"
+msgstr ""
+"ETS2LA 是一个专为欧洲卡车模拟 2（ETS2）与美国卡车模拟（ATS）打造、简单易用的"
+"自动驾驶辅助项目。想了解更多详情，可通过侧边栏访问项目的 GitHub 页面或维基文"
+"档。"
 
 #: .\Pages\about.py:430
 msgid "Statistics"
@@ -435,7 +442,8 @@ msgstr "ETS2LA 后端可能部分不可用，请注意任何错误值或缺失�
 
 #: .\Pages\about.py:505
 msgid "We are working to restore full functionality as soon as possible. Hang on tight, this might take anywhere from a few minutes to several days!"
-msgstr "我们正在努力的恢复全部功能。请耐心等待，这可能需要几分钟到几天的时间！"
+msgstr "我们正在全力恢复全部功能，请耐心稍候。修复可能需要**几分钟到几天**不等，请多"
+"多谅解！"
 
 #: .\Pages\about.py:513
 msgid "Contributors"
@@ -465,7 +473,7 @@ msgstr "如果您喜欢该项目并希望支持其开发，可以通过 Ko-Fi �
 
 #: .\Pages\about.py:609
 msgid "If you want to contribute, then I recommend joining the discord server and checking out the github page."
-msgstr "如果你想做出贡献，我建议你加入 discord 服务器并查看 github 页面。"
+msgstr "如果你想参与贡献，建议加入我们的 Discord 服务器，并查看 GitHub 页面。"
 
 #: .\Pages\about.py:633
 msgid "If you want to contribute to the translations, then you can do so by joining the discord and contacting a moderator."
@@ -809,7 +817,7 @@ msgstr "全局设置"
 
 #: .\Pages\global_settings.py:209
 msgid "Here you can find settings that affect the entire application. Things such as the window size and language."
-msgstr "在这里，您可以找到影响整个应用程序的设置。例如窗口大小和语言。"
+msgstr "在这里你可以查看影响整个应用的设置项，比如窗口大小、语言等相关配置。"
 
 #: .\Pages\global_settings.py:217
 msgid "User Interface"
@@ -893,11 +901,11 @@ msgstr "调整音量。这将影响 ETS2LA 播放的所有声音。"
 
 #: .\Pages\global_settings.py:389
 msgid "Engage"
-msgstr "从事"
+msgstr "启动"
 
 #: .\Pages\global_settings.py:395
 msgid "Disengage"
-msgstr "脱离接触"
+msgstr "停用"
 
 #: .\Pages\global_settings.py:401
 msgid "Warning"
@@ -905,7 +913,7 @@ msgstr "警告"
 
 #: .\Pages\global_settings.py:407
 msgid "Prompt"
-msgstr "迅速的"
+msgstr "提示"
 
 #: .\Pages\global_settings.py:409
 msgid "Toggle Sounds"
@@ -929,15 +937,18 @@ msgstr "在 Ko-Fi 上支持 ETS2LA 开发"
 
 #: .\Pages\global_settings.py:475
 msgid "You will see exactly one ad in the about page. There will be no other ads. This option is recommended to support further development of ETS2LA."
-msgstr "您将在主页看到一个广告，不会出现其他广告。推荐启用此选项以支持 ETS2LA 的持续开发。"
+msgstr "仅在关于页面展示**一条广告**，无其他广告。推荐开启此选项，以支持 ETS2LA 后续"
+"开发。"
 
 #: .\Pages\global_settings.py:482
 msgid "You will see non intrusive ads in non essential pages. Visualization pages will be ad free. This option is recommended if you want to support development further."
-msgstr "您将在其他页面看到非侵入式广告，可视化页面将保持无广告。若您希望进一步支持开发，推荐选择此选项。"
+msgstr "非核心页面会显示**不打扰的轻量广告**，数据可视化页面则无广告。若你希望进一步"
+"支持项目开发，推荐选择此选项。"
 
 #: .\Pages\global_settings.py:489
 msgid "You will see as many ads as I thought would not completely destroy the usage. Visualization pages are still ad free when enabled."
-msgstr "您将看到尽可能多的广告，但会控制在不过度影响使用体验的程度。即使启用此选项，可视化页面仍保持无广告。"
+msgstr "你会看到**适量广告**，数量控制在不会严重影响使用体验的范围内。即使开启此选项"
+"，**数据可视化页面依然无广告**。"
 
 #: .\Pages\global_settings.py:510
 msgid "Fallback to old acceleration method"
@@ -1158,7 +1169,8 @@ msgstr "地图数据"
 
 #: .\Pages\onboarding.py:413
 msgid "ETS2LA uses pre-extracted map data from the game. We handle the data beforehand and you can then just download it as necessary. Please select the data you need for your current game version below."
-msgstr "ETS2LA 使用从游戏中预先提取的地图数据。我们会事先处理这些数据，您只需根据需要下载即可。请在下面选择您当前游戏版本所需的数据。"
+msgstr "ETS2LA 使用从游戏中预先提取的地图数据。我们会提前处理好数据，你只需按需下载即"
+"可。请在下方选择你当前游戏版本所需的数据。"
 
 #: .\Pages\onboarding.py:425
 msgid "Waiting for data selection..."
@@ -1214,7 +1226,8 @@ msgstr "窗口大小"
 
 #: .\Pages\onboarding.py:556
 msgid "ETS2LA bypasses Windows to provide custom window features. Due to this you cannot resize the window normally. These are sliders to manually change the window size."
-msgstr "ETS2LA 绕过 Windows 提供自定义窗口功能。因此，您无法正常调整窗口大小。这些是手动更改窗口大小的滑块。"
+msgstr "ETS2LA 会绕过系统直接提供自定义窗口功能，因此无法通过常规方式调整窗口大小。你"
+"可以使用这些滑块来**手动设置窗口尺寸**。"
 
 #: .\Pages\onboarding.py:568
 msgid "Adjust the width of the ETS2LA window."
@@ -1828,27 +1841,27 @@ msgstr "障碍物设置"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:203
 msgid "Ignore Gates"
-msgstr "忽略大门"
+msgstr "忽略道口"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:204
 msgid "Whether the ACC should ignore gates. Please note that this will, as it says ignore the gates."
-msgstr "ACC功能是否应该忽略闸门。请注意，顾名思义，这将忽略闸门。"
+msgstr "ACC功能是否应该忽略道口。请注意，顾名思义，这将忽略道口。"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:213
 msgid "Ignore Traffic Lights"
-msgstr "无视交通信号灯"
+msgstr "无视红绿灯"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:214
 msgid "Whether the ACC should ignore traffic lights. Please note that this will, as it says ignore the traffic lights."
-msgstr "ACC 是否应忽略交通信号灯。请注意，启用后 ACC 将忽略信号灯驾驶。"
+msgstr "ACC 是否应忽略交通红绿灯。请注意，启用后 ACC 将忽略红绿灯驾驶。"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:224
 msgid "Traffic Light Mode"
-msgstr "交通信号灯模式"
+msgstr "红绿灯模式"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:227
 msgid "Select how the ACC should handle traffic lights. Normal mode handles lights on the other side of the intersection better."
-msgstr "选择 ACC 处理交通信号灯的方式。正常模式能更好地处理交叉路口另一侧的信号灯。"
+msgstr "选择ACC如何处理红绿灯。普通模式能更好地处理路口另一侧的红绿灯。"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:233
 msgid "Speed Control"
@@ -2143,11 +2156,11 @@ msgstr "显示当前油门和制动百分比。"
 #: .\Plugins\HUD\elements\semaphores.py:8 .\Plugins\HUD\main.py:321
 #: .\Plugins\HUD\main.py:324
 msgid "Traffic Lights"
-msgstr "交通信号灯"
+msgstr "红绿灯"
 
 #: .\Plugins\HUD\elements\semaphores.py:9
 msgid "Draw traffic light information."
-msgstr "显示交通灯信息。"
+msgstr "显示红绿灯信息。"
 
 #: .\Plugins\HUD\elements\speed.py:8 .\Plugins\HUD\main.py:47
 #: .\Plugins\TTS\main.py:159
