@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: ETS2LA Backend 1.0.0\n"
 "POT-Creation-Date: 2026-02-01 15:00\n"
 "PO-Revision-Date: 2026-02-21 16:20+0000\n"
-"Last-Translator: DarkSide <darkside@ets2la.com>\n"
+"Last-Translator: MRUIAW <mruiaw@ets2la.com>\n"
 "Language-Team: Chinese (Simplified Han script) <http://weblate.ets2la.com/"
 "projects/ets2la/backend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -395,9 +395,9 @@ msgstr "关于"
 #: .\Pages\about.py:422
 msgid "ETS2LA is a project that aims to provide an easy to use self driving solution for ETS2 and ATS, if you want to learn more then you can visit the github page or the wiki via the sidebar."
 msgstr ""
-"ETS2LA 是一个专为欧洲卡车模拟 2（ETS2）与美国卡车模拟（ATS）打造、简单易用的"
-"自动驾驶辅助项目。想了解更多详情，可通过侧边栏访问项目的 GitHub 页面或维基文"
-"档。"
+"ETS2LA 是一个专为 欧洲卡车模拟 2（ETS2）与 美国卡车模拟（ATS）打造、简单易用"
+"的自动驾驶辅助项目。想了解更多详情，可通过侧边栏访问项目的 GitHub 页面或维基"
+"文档。"
 
 #: .\Pages\about.py:430
 msgid "Statistics"
@@ -1729,7 +1729,7 @@ msgstr "绘制调用: {} ({:.0f}%)"
 
 #: .\Plugins\AR\main.py:738
 msgid "Frustum Culled: {} ({:.0f}%)"
-msgstr "视锥体剔除：{}（{:.0f}%）"
+msgstr "视锥体剔除：{} ({:.0f}%)"
 
 #: .\Plugins\AR\main.py:748
 msgid "Text Cache Length: {}"
@@ -1853,7 +1853,7 @@ msgstr "无视红绿灯"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:214
 msgid "Whether the ACC should ignore traffic lights. Please note that this will, as it says ignore the traffic lights."
-msgstr "ACC 是否应忽略交通红绿灯。请注意，启用后 ACC 将忽略红绿灯驾驶。"
+msgstr "ACC 是否应忽略红绿灯。请注意，启用后 ACC 将忽略红绿灯驾驶。"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:224
 msgid "Traffic Light Mode"
@@ -1861,7 +1861,7 @@ msgstr "红绿灯模式"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:227
 msgid "Select how the ACC should handle traffic lights. Normal mode handles lights on the other side of the intersection better."
-msgstr "选择ACC如何处理红绿灯。普通模式能更好地处理路口另一侧的红绿灯。"
+msgstr "选择ACC处理红绿灯的方式。普通模式能更好地处理路口另一侧的红绿灯。"
 
 #: .\Plugins\AdaptiveCruiseControl\settings.py:233
 msgid "Speed Control"
