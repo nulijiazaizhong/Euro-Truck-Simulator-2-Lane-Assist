@@ -18,6 +18,7 @@ from ETS2LA.Utils.Values.graphing import PIDGraph
 from Modules.Traffic.classes import Vehicle
 
 # Python imports
+from collections import deque
 from typing import cast
 import traceback
 import logging
@@ -151,7 +152,7 @@ class Plugin(ETS2LAPlugin):
 
     # PID state variables
     graph = PIDGraph(history=10)
-    accel_errors = []
+    accel_errors = deque(maxlen=200)
     last_accel_error = 0.0  # For derivative term
     last_control_output = 0.0  # For smoothing changes
     last_time = time.time()
@@ -1184,20 +1185,22 @@ class Plugin(ETS2LAPlugin):
         else:
             # Clear integral errors, but we don't add negative errors
             # to the list to avoid "winding up" an overshoot of the target acceleration.
-            if len(self.accel_errors) != 0 and self.accel_errors[0] > 0:
-                self.accel_errors = self.accel_errors[1:]
+            if len(self.accel_errors) > 0 and self.accel_errors[0] > 0:
+                self.accel_errors.popleft()
 
         # Clear the integral term if we're speeding
         # (dynamically adjust the number to keep at the speedlimit)
         if self.speed > self.speedlimit and len(self.accel_errors) > 5:
-            if sum(self.accel_errors) > 0:
-                overshoot = round((self.speed - self.speedlimit) * 3.6)
-                self.accel_errors = self.accel_errors[max(1, overshoot) * 2 :]
+                if sum(self.accel_errors) > 0:
+                    overshoot = round((self.speed - self.speedlimit) * 3.6)
+                    trim = max(1, overshoot) * 2
+                    for _ in range(min(trim, len(self.accel_errors))):
+                        self.accel_errors.popleft()
 
         # Clear the integral term if we're under 10 km/h
         # (to prevent overshooting when starting from a stop)
         if self.speed < 10 / 3.6:  # 10 kph -> m/s
-            self.accel_errors = [0]
+            self.accel_errors = deque(maxlen=200)
 
         # Integral term
         accel_error_sum = sum(self.accel_errors)
@@ -1266,7 +1269,7 @@ class Plugin(ETS2LAPlugin):
         self.map_points = points
 
         if not self.enabled:
-            self.accel_errors = []
+            self.accel_errors = deque(maxlen=200)
             self.tags.vehicle_highlights = []
             self.tags.vehicle_in_front_distance = None
             self.tags.AR = []
