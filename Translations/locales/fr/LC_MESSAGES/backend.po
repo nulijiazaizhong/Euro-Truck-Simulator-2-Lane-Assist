@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ETS2LA Backend 1.0.0\n"
 "POT-Creation-Date: 2026-02-01 15:00\n"
-"PO-Revision-Date: 2026-02-02 00:22+0000\n"
-"Last-Translator: Flyzar73 <flyzar73@ets2la.com>\n"
+"PO-Revision-Date: 2026-02-22 14:03+0000\n"
+"Last-Translator: Hugo <hugo@ets2la.com>\n"
 "Language-Team: French <http://weblate.ets2la.com/projects/ets2la/backend/fr/>"
 "\n"
 "Language: fr\n"
@@ -442,6 +442,9 @@ msgstr ""
 #: .\Pages\about.py:505
 msgid "We are working to restore full functionality as soon as possible. Hang on tight, this might take anywhere from a few minutes to several days!"
 msgstr ""
+"Nous mettons tout en œuvre pour rétablir le fonctionnement normal au plus "
+"vite. Veuillez patienter, cela peut prendre de quelques minutes à plusieurs "
+"jours !"
 
 #: .\Pages\about.py:513
 msgid "Contributors"
@@ -528,31 +531,36 @@ msgstr "Plugin non trouvé dans le catalogue."
 
 #: .\Pages\catalogue.py:208
 msgid "Closing existing plugin processes"
-msgstr ""
+msgstr "Fermeture des processus de plugins existants"
 
 #: .\Pages\catalogue.py:214
+#, fuzzy
 msgid "Failed to stop existing plugin processes."
-msgstr ""
+msgstr "Impossible d'arrêter les processus des plugin existants."
 
 #: .\Pages\catalogue.py:216
+#, fuzzy
 msgid "Updating existing installation"
-msgstr ""
+msgstr "Mise à jour de l'installation existante"
 
 #: .\Pages\catalogue.py:241
 msgid "Restarting plugin process"
-msgstr ""
+msgstr "redémarrage du Processus du plugin"
 
 #: .\Pages\catalogue.py:247
 msgid "Failed to start plugin background process, but the plugin files were updated."
 msgstr ""
+"Le processus d'arrière-plan du plugin n'a pas pu démarrer, mais les fichiers "
+"du plugin ont été mis à jour."
 
 #: .\Pages\catalogue.py:252 .\Pages\catalogue.py:296 .\Pages\catalogue.py:386
 msgid "Success"
 msgstr "Succès"
 
 #: .\Pages\catalogue.py:257
+#, fuzzy
 msgid "Plugin '{name}' updated successfully."
-msgstr ""
+msgstr "Le plugin '{name}' a été mis à jour avec succès."
 
 #: .\Pages\catalogue.py:263 .\Pages\catalogue.py:304 .\Pages\catalogue.py:394
 msgid "Failed"
@@ -560,7 +568,7 @@ msgstr "Échec"
 
 #: .\Pages\catalogue.py:265
 msgid "Failed to update plugin '{name}'"
-msgstr ""
+msgstr "Échec de la mise à jour du plugin '{name}'"
 
 #: .\Pages\catalogue.py:272
 msgid "Cloning repository"
@@ -637,11 +645,11 @@ msgstr "{count} Plugins trouvés"
 
 #: .\Pages\catalogue.py:499
 msgid "Update Available {new}"
-msgstr ""
+msgstr "Mise à jour disponible {new}"
 
 #: .\Pages\catalogue.py:522
 msgid "Failed to read version"
-msgstr ""
+msgstr "Impossible de lire la version"
 
 #: .\Pages\catalogue.py:555
 msgid "Back"
@@ -827,7 +835,7 @@ msgstr "Interface utilisateur"
 
 #: .\Pages\global_settings.py:231
 msgid "Window Settings"
-msgstr ""
+msgstr "Paramètres de fenêtre"
 
 #: .\Pages\global_settings.py:241 .\Pages\onboarding.py:567
 msgid "Window Width"
@@ -855,7 +863,7 @@ msgstr "Modifiez la transparence de la fenêtre en mode transparence. Cela peut 
 
 #: .\Pages\global_settings.py:292
 msgid "Language Settings"
-msgstr ""
+msgstr "Paramètres de langue"
 
 #: .\Pages\global_settings.py:300 .\Pages\onboarding.py:201
 msgid "Language"
@@ -883,7 +891,7 @@ msgstr "Audio"
 
 #: .\Pages\global_settings.py:355
 msgid "Sound Settings"
-msgstr ""
+msgstr "Paramètres audio"
 
 #: .\Pages\global_settings.py:362
 msgid "Soundpack"
@@ -903,15 +911,15 @@ msgstr "Réglez le volume. Cela affectera tous les sons joués par ETS2LA."
 
 #: .\Pages\global_settings.py:389
 msgid "Engage"
-msgstr ""
+msgstr "Engager"
 
 #: .\Pages\global_settings.py:395
 msgid "Disengage"
-msgstr ""
+msgstr "Dengager"
 
 #: .\Pages\global_settings.py:401
 msgid "Warning"
-msgstr ""
+msgstr "Avertissement"
 
 #: .\Pages\global_settings.py:407
 msgid "Prompt"
