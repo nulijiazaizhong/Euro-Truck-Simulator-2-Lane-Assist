@@ -74,9 +74,15 @@ public class MapData : Map
                 }
                 break;
             case DataFidelity.Medium:
-            case DataFidelity.High:
                 // For medium (and high) fidelity drop all items that aren't in the default enum.
                 if (typeof(IgnoredItemTypes).GetEnumNames().Contains(item.ItemType.ToString()))
+                {
+                    return false;
+                }
+                break;
+            case DataFidelity.High:
+                // High gets models too.
+                if (item.ItemType.ToString() != "Model" && typeof(IgnoredItemTypes).GetEnumNames().Contains(item.ItemType.ToString()))
                 {
                     return false;
                 }
@@ -112,7 +118,7 @@ public class MapData : Map
                 r.Left.Terrain = null;
                 r.Right.Terrain = null;
             }
-        }         
+        }
         return true;
     }
 

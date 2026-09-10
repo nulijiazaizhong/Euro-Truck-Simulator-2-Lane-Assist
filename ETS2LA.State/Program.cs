@@ -9,6 +9,7 @@ using ETS2LA.Game.PpdFiles;
 using ETS2LA.Logging;
 using ETS2LA.Notifications;
 using static ETS2LA.Translations.T;
+using ETS2LA.Game.PmdFiles;
 
 namespace ETS2LA.State;
 
@@ -356,6 +357,7 @@ public class ApplicationState
                         RunningGame = install;
                         SiiFileHandler.Current.SetFileSystem(RunningGame.GetFileSystem());
                         PpdFileHandler.Current.SetFileSystem(RunningGame.GetFileSystem());
+                        PmdFileHandler.Current.SetFileSystem(RunningGame.GetFileSystem());
                     }
                     else if (success)
                         install.ClearParsedData();

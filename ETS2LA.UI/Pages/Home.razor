@@ -40,7 +40,23 @@
         });
 
         var updateManager = Updater.Current.UpdateManager;
-        var latestUpdateInfo = updateManager.CheckForUpdates();
+        UpdateInfo? latestUpdateInfo = null;
+        try
+        {
+            latestUpdateInfo = updateManager.CheckForUpdates();
+        } 
+        catch 
+        {
+            NotificationHandler.Current.CloseNotification("ETS2LA.UI.Settings.Updates.CheckingForUpdates");
+            NotificationHandler.Current.SendNotification(new ETS2LA.Notifications.Notification{
+                Id = "ETS2LA.UI.Settings.Updates.ErrorCheckingForUpdates",
+                Title = _("Error Checking for Updates"),
+                Content = _("An error occurred while checking for updates."),
+                IsProgressIndeterminate = false,
+                Level = NotificationLevel.Warning
+            });
+            return;
+        }
         alreadyChecked = true;
 
         if (latestUpdateInfo != null)
